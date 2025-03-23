@@ -1,0 +1,27 @@
+<div class="home-container">
+<div class="container">
+  <h2>Menu List</h2>
+
+  <!-- Menu Table -->
+  <table>
+    <thead>
+      <tr>
+        <th>Restaurant</th>
+        <th>Menu Item</th>
+        <th>Price</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let menu of menuItems">
+        <td>{{menu.restaurant.id}}</td>
+        <td>{{ menu.name }}</td>
+        <td>{{ menu.price }}</td>
+        <td>
+          <button (click)="placeOrder(menu)">Place Order</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</div>

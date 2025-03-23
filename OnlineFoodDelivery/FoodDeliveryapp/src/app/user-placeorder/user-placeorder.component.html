@@ -1,0 +1,28 @@
+<div class="home-container">
+  <div class="order-container">
+    <h2>Order Form</h2>
+  
+    
+    <div class="form-group">
+      <label>Selected Menu Items:</label>
+      <div *ngFor="let menu of menuItems" class="menu-item">
+        <input type="checkbox" [value]="menu.id" (change)="onItemSelect($event)">
+        {{menu.restaurant}} {{ menu.name }} - ₹{{ menu.price }}
+      </div>
+    </div>
+  
+    <div class="total-price">Total Price: ₹{{ totalPrice }}</div>
+  
+    <div class="form-group">
+      <label>Payment Method:</label>
+      <select [(ngModel)]="paymentMethod">
+        <option value="">Select</option>
+        <option value="Cash">Cash</option>
+        <option value="Card">Card</option>
+        <option value="Card">UPI</option>
+      </select>
+    </div>
+  
+    <button class="btn" (click)="placeOrder()">Place Order</button>
+  </div>
+</div>  

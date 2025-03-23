@@ -1,0 +1,24 @@
+<div class="home-container ">
+  <div class="form-container">
+    <h2>Add Menu</h2>
+    <form (ngSubmit)="addMenu()">
+      <div class="form-group">
+        <label for="name">Menu Name:</label>
+        <input type="text" id="name" [(ngModel)]="Menu.name" name="name" required />
+      </div>
+  
+      <div class="form-group">
+        <label for="price">Price:</label>
+        <input type="number" id="price" [(ngModel)]="Menu.price" name="price" required />
+      </div>
+  
+      <div class="form-group">
+        <label for="restaurant_id">Restaurant ID:</label>
+        <input type="number" id="restaurant_id" [(ngModel)]="Menu.restaurant.id" name="restaurant_id" required />
+      </div>
+  
+      <button type="submit" class="btn">Add Menu</button>
+    </form>
+  </div>
+  
+</div>

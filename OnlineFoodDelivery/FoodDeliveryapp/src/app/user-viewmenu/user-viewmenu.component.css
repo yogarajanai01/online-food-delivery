@@ -1,0 +1,60 @@
+.container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ee6666;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    color: #333;
+    background-color: aliceblue;
+  }
+  
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  th, td {
+    padding: 10px;
+    border: 1px solid #59ddc7;
+    text-align: center;
+  }
+  
+  th {
+    background: #007bffc7;
+    color: white;
+  }
+  
+  button {
+    padding: 6px 12px;
+    border: none;
+    background: #28a745;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  button:hover {
+    background: #218838;
+  }
+  
+  .home-container {
+    background-image: url(https://plus.unsplash.com/premium_photo-1673108852141-e8c3c22a4a22?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Zm9vZHxlbnwwfHwwfHx8MA%3D%3D);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh; /* Full viewport height */
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centers everything vertically */
+    text-align: center;
+}
